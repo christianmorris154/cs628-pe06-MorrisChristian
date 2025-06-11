@@ -10,7 +10,8 @@ const CenterMessage = ({ message }) => (
 const styles = StyleSheet.create({
   emptyContainer: {
     padding: 10,
-    borderBottomWidth: 2
+    borderBottomWidth: 2,
+    borderBottomColor: colors.primary
   },
   message: {
     alignSelf: 'center',

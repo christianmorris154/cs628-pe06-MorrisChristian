@@ -40,7 +40,8 @@ export default class Countries extends React.Component {
 const styles = StyleSheet.create({
   countryContainer: {
     padding: 10,
-    borderBottomWidth: 2
+    borderBottomWidth: 2,
+    borderBottomColor: colors.primary,
   },
   country: {
     fontSize: 20,

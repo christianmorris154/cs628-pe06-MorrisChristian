@@ -1,12 +1,19 @@
-import React, { useState } from 'react';
-import { View, Text } from 'react-native';
+import React, { Component, useEffect } from 'react';
+import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { LogBox } from 'react-native';
 
-import Cities from '../../src/Cities/Cities';
-import AddCity from '../../src/AddCity/AddCity';
-import Countries from '../../src/Countries/Countries';
-import AddCountry from '../../src/AddCountry/AddCountry';
+import Cities from './src/Cities/Cities';
+import City from './src/Cities/City';
+import AddCity from './src/AddCity/AddCity';
+import Countries from './src/Countries/Countries';
+import Country from './src/Countries/Country';
+import AddCountry from './src/AddCountry/AddCountry';
+
+import { colors } from './src/theme';
+
+LogBox.ignoreLogs(['Non-serializable values were found in the navigation state']);
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -76,7 +83,7 @@ function CountriesStackScreen({ navigation, route }) {
   );
 }
 
-export default class App extends component {
+export default class App extends Component {
   state = {
     cities: [],
     countries: [],

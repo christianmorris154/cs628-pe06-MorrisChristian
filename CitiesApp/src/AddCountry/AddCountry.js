@@ -58,6 +58,7 @@ class AddCountry extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: colors.primary,
     flex: 1,
     justifyContent: 'center',
   },

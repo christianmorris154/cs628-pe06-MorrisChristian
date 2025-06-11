@@ -72,6 +72,7 @@ const styles = StyleSheet.create({
     alignSelf: 'center'
   },
   container: {
+    backgroundColor: colors.primary,
     flex: 1,
     justifyContent: 'center'
   },
